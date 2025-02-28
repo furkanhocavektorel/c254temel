@@ -920,14 +920,31 @@
             //}
 
 
+            // sayi alir
             Console.WriteLine("sayi1 gir");
             int sayi1 = Convert.ToInt32(Console.ReadLine());
 
+            // ikinci sayiyi alir
             Console.WriteLine("sayi2 gir");
             int sayi2 = Convert.ToInt32(Console.ReadLine());
 
-            toplama(sayi1, sayi2, "sdgfdsg");
-            cikartma(sayi1,sayi2);
+            // iki sayiyi toplama metoduna gönderiyor
+            // ve gelen sonuc c degiskenine atanıyor
+            int c = toplama(sayi1, sayi2, "sdgfdsg");
+
+            // c degiskeni(toplamadan gelen cevaptı bu)
+            // cikartma metoduna gönderiliyor
+
+
+            string s = "asd;";
+
+            s.IndexOf()
+            
+          
+
+
+
+            cikartma(c,sayi2);
 
 
         } // Main metodu bitis
@@ -935,10 +952,30 @@
 
 
         // parametre alan metod
-        static void toplama(int a,int sayi2,string ad)
+
+       
+            /// <summary>
+            ///
+            /// </summary>
+            /// <param name="a asdsad"></param>
+            /// <param name="sayi2"></param>
+            /// <param name="ad"></param>
+            /// <returns> ooo kral hg</returns>
+        static int toplama(int a,int sayi2,string ad)
         {
-            
-            Console.WriteLine(a + sayi2);
+            int sonuc = a+ sayi2;
+            int yas = a + sayi2*3;
+
+            if (yas > 65) {
+                return sonuc;
+            }
+
+            int sonuc3 = a + sayi2-1;
+
+            int sonuc4 = a + sayi2-769;
+
+            return sonuc4;
+
         }
 
 
@@ -946,21 +983,6 @@
         {
             Console.WriteLine(ali - fb);
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         // SOLID PRENSIPI
