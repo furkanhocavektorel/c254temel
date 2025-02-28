@@ -1,0 +1,14 @@
+D:\furkanhoca\Sol1\IlkProje\bin\Release\net8.0\IlkProje.exe
+D:\furkanhoca\Sol1\IlkProje\bin\Release\net8.0\IlkProje.deps.json
+D:\furkanhoca\Sol1\IlkProje\bin\Release\net8.0\IlkProje.runtimeconfig.json
+D:\furkanhoca\Sol1\IlkProje\bin\Release\net8.0\IlkProje.dll
+D:\furkanhoca\Sol1\IlkProje\bin\Release\net8.0\IlkProje.pdb
+D:\furkanhoca\Sol1\IlkProje\obj\Release\net8.0\IlkProje.GeneratedMSBuildEditorConfig.editorconfig
+D:\furkanhoca\Sol1\IlkProje\obj\Release\net8.0\IlkProje.AssemblyInfoInputs.cache
+D:\furkanhoca\Sol1\IlkProje\obj\Release\net8.0\IlkProje.AssemblyInfo.cs
+D:\furkanhoca\Sol1\IlkProje\obj\Release\net8.0\IlkProje.csproj.CoreCompileInputs.cache
+D:\furkanhoca\Sol1\IlkProje\obj\Release\net8.0\IlkProje.dll
+D:\furkanhoca\Sol1\IlkProje\obj\Release\net8.0\refint\IlkProje.dll
+D:\furkanhoca\Sol1\IlkProje\obj\Release\net8.0\IlkProje.pdb
+D:\furkanhoca\Sol1\IlkProje\obj\Release\net8.0\IlkProje.genruntimeconfig.cache
+D:\furkanhoca\Sol1\IlkProje\obj\Release\net8.0\ref\IlkProje.dll
