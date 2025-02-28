@@ -12,3 +12,4 @@ D:\furkanhoca\Sol1\IlkProje\obj\Release\net8.0\refint\IlkProje.dll
 D:\furkanhoca\Sol1\IlkProje\obj\Release\net8.0\IlkProje.pdb
 D:\furkanhoca\Sol1\IlkProje\obj\Release\net8.0\IlkProje.genruntimeconfig.cache
 D:\furkanhoca\Sol1\IlkProje\obj\Release\net8.0\ref\IlkProje.dll
+D:\furkanhoca\Sol1\IlkProje\obj\Release\net8.0\IlkProje.sourcelink.json

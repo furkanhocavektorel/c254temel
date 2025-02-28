@@ -2,8 +2,20 @@
 {
     internal class Program
     {
+
         static void Main(string[] args)
         {
+            #region
+
+            //int a;
+
+            //if (true) {
+
+            //    if (true) {
+            //        int b = 3;
+            //    }
+
+            //}
 
             #region degisken tanimlama
 
@@ -586,7 +598,6 @@
 
             #endregion
 
-
             #region while
             /* 
             
@@ -868,23 +879,134 @@
 
             #endregion
 
-            int i = 1;
-            while (i < 10)
-            {
-                Console.WriteLine(i);
-                i++;
-            }
+            //int i = 1;
+            //while (i < 10)
+            //{
+            //    Console.WriteLine(i);
+            //    i++;
+            //}
 
-            Console.WriteLine("*******");
-
-
-            for(int i2=5 ; i2 < 10; i2++)
-            {
-                Console.WriteLine(i2);
-            }
+            //Console.WriteLine("*******");
 
 
+            //for(int i2=5 ; i2 < 10; i2++)
+            //{
+            //    Console.WriteLine(i2);
+
+            #endregion
+
+
+            //mailolustur();
+            //Console.WriteLine("mail yukarıdadır");
+
+            //Console.WriteLine("başka kaç mail oluşturmak istersin");
+
+            //int sayi = Convert.ToInt32(Console.ReadLine());
+            //int i = 1;
+
+
+            //while (sayi >= i)
+            //{
+            //    mailolustur();
+            //    Console.WriteLine("mail oluşturuldu");
+
+            //    if (i==2)
+            //    {
+            //        test();
+
+            //    }
+
+            //    i++;
+            //}
+
+
+            Console.WriteLine("sayi1 gir");
+            int sayi1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("sayi2 gir");
+            int sayi2 = Convert.ToInt32(Console.ReadLine());
+
+            toplama(sayi1, sayi2, "sdgfdsg");
+            cikartma(sayi1,sayi2);
+
+
+        } // Main metodu bitis
+
+
+
+        // parametre alan metod
+        static void toplama(int a,int sayi2,string ad)
+        {
+            
+            Console.WriteLine(a + sayi2);
+        }
+
+
+        static void cikartma(int ali,int fb)
+        {
+            Console.WriteLine(ali - fb);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // SOLID PRENSIPI
+        // Single responsibility
+        // open-close
+        // Liskov
+        // Interface seg
+        // Depency Injection
+
+        static void test()
+        {
+            Console.WriteLine("test metoduna hg");
+            int a = 65;
+            int b = 675;
+            int c = 543;
+            double sonuc = a * 3d / b * (c - b) / 2 + (a + b + 10);
+
+            Console.WriteLine(sonuc);
 
         }
-    }
+
+        static void mailolustur()
+        {
+            Console.WriteLine("adinizi giriniz...");
+            string ad= Console.ReadLine();
+
+            Console.WriteLine("soyad giriniz...");
+            string soyad= Console.ReadLine();
+
+            //furkan.turkmen@gmail.com
+            string mail= ad+"."+soyad+"@gmail.com";
+
+            Console.WriteLine(mail);
+            
+
+        }
+
+
+      
+
+
+
+
+
+
+
+
+    }// Internal Class program bitis
 }
