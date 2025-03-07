@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IlkProje")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fe9bd68afadff41d3d392b158c7a1c31bce1448b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+71ed137c6bb387245bf98192d5392b91661fdfc7")]
 [assembly: System.Reflection.AssemblyProductAttribute("IlkProje")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IlkProje")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

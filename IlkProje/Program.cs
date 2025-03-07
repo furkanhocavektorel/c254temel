@@ -896,6 +896,7 @@
             #endregion
 
 
+            #region
             //mailolustur();
             //Console.WriteLine("mail yukarıdadır");
 
@@ -920,47 +921,35 @@
             //}
 
 
-            // sayi alir
-            Console.WriteLine("sayi1 gir");
-            int sayi1 = Convert.ToInt32(Console.ReadLine());
+            //// sayi alir
+            //Console.WriteLine("sayi1 gir");
+            //int sayi1 = Convert.ToInt32(Console.ReadLine());
 
-            // ikinci sayiyi alir
-            Console.WriteLine("sayi2 gir");
-            int sayi2 = Convert.ToInt32(Console.ReadLine());
+            //// ikinci sayiyi alir
+            //Console.WriteLine("sayi2 gir");
+            //int sayi2 = Convert.ToInt32(Console.ReadLine());
 
-            // iki sayiyi toplama metoduna gönderiyor
-            // ve gelen sonuc c degiskenine atanıyor
-            int c = toplama(sayi1, sayi2, "sdgfdsg");
+            //// iki sayiyi toplama metoduna gönderiyor
+            //// ve gelen sonuc c degiskenine atanıyor
+            //int c = toplama(sayi1, sayi2, "sdgfdsg");
 
-            // c degiskeni(toplamadan gelen cevaptı bu)
-            // cikartma metoduna gönderiliyor
+            //// c degiskeni(toplamadan gelen cevaptı bu)
+            //// cikartma metoduna gönderiliyor
 
 
-            string s = "asd;";
-
-            s.IndexOf()
-            
-          
+            //string s = "asd;";
+            #endregion
 
 
 
-            cikartma(c,sayi2);
+
+            cikartma(213,543);
 
 
         } // Main metodu bitis
 
 
 
-        // parametre alan metod
-
-       
-            /// <summary>
-            ///
-            /// </summary>
-            /// <param name="a asdsad"></param>
-            /// <param name="sayi2"></param>
-            /// <param name="ad"></param>
-            /// <returns> ooo kral hg</returns>
         static int toplama(int a,int sayi2,string ad)
         {
             int sonuc = a+ sayi2;
@@ -982,17 +971,11 @@
         static void cikartma(int ali,int fb)
         {
             Console.WriteLine(ali - fb);
+            test();
         }
 
 
-        // SOLID PRENSIPI
-        // Single responsibility
-        // open-close
-        // Liskov
-        // Interface seg
-        // Depency Injection
-
-        static void test()
+        static double test()
         {
             Console.WriteLine("test metoduna hg");
             int a = 65;
@@ -1001,7 +984,10 @@
             double sonuc = a * 3d / b * (c - b) / 2 + (a + b + 10);
 
             Console.WriteLine(sonuc);
-
+            // 0 -> onaylı değil
+            // 1 -> mail onaylı
+            // 2 -> hesabını silmis
+            return 1;
         }
 
         static void mailolustur()
