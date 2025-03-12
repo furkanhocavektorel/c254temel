@@ -2,44 +2,54 @@
 
 namespace OOPGiris
 {
+
+    /*
+     OOP 4 adet prensip vardır.
+    1_ encapsulation
+     
+     
+     */
     internal class Program
     {
-        DortIslem di = new DortIslem();
 
         static void Main(string[] args)
         {
-            Program program = new Program();
-            program.test();
-         
+           Insan i= new Insan("buse","koc",65);
 
-            DortIslem asdg = new DortIslem();
+           Insan i2= new Insan("fatma","türkmen",23);
 
-            asdg.sayi1 = 45;
-            asdg.sayi2 = 13;
-
-          
-
-            asdg.toplama();
-            asdg.carpma();
+           Insan i3= new Insan("mehmet","canlı",21);
 
 
+            DortIslem dortIslem = new DortIslem(i,54);
 
 
-            di.toplama();
+            Console.WriteLine(dortIslem.insan.ad);
 
-            test();
+
+            dortIslem = new DortIslem(i2, 3);
+
+            dortIslem.insan.ad = "kemal";
+            Console.WriteLine(dortIslem.insan.ad);
+            i2.ad = "can";
+            Console.WriteLine(i2.ad);
+            dortIslem.toplama();
+
+            yassDegistir(i2);
+
+
+            Console.WriteLine(dortIslem.insan.ad);
+            Console.WriteLine(dortIslem.insan.yas);
 
 
         }
 
 
-        void test()
+
+        static void yassDegistir(Insan ınsan)
         {
-            di.carpma();
+            ınsan.yas = 667;
         }
-
-
-    
 
 
 

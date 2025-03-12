@@ -3,34 +3,61 @@ namespace OOPGiris
 {
     internal class DortIslem
     {
-        // protected,public,private,default,internal
+        // encapsulation - kapsülleme
+        private int sayi1;
+        private int sayi2;
+        public Insan insan { get; set; }
 
-        public int sayi1;
-        public int sayi2;
+        public void setSayi2(int sayi)
+        {
+            sayi2 = sayi - 100;
+        }
         
-        public void toplama()
+        public int getSayi1()
         {
-            Console.WriteLine(sayi1+sayi2);
+            return sayi1;
+        }
+
+        public DortIslem(Insan i,int sayii)
+        {
+            insan = i;
+           
+            sayi2 = sayii;
+        }
+
+
+        public int toplama()
+        {
+            if (43 > 75)
+            {
+                return (sayi1 + sayi2) * 2;
+            }
+         
+            insan.yas=sayi1+sayi2;
+                return sayi1 + sayi2;
+           
+        }
+
+
+        private int cikartma()
+        {
+            return sayi1 - sayi2;
+
 
         }
 
 
-        private void cikartma()
+        public int carpma()
         {
-            Console.WriteLine(sayi1 - sayi2);
+            return sayi1 * sayi2;
+
 
         }
 
-
-        public void carpma()
+        public int bolme()
         {
-            Console.WriteLine(sayi1 * sayi2);
+            return sayi1 / sayi2;
 
-        }
-
-        public void bolme()
-        {
-            Console.WriteLine(sayi1 / sayi2);
 
         }
 
