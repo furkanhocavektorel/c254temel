@@ -14,42 +14,27 @@ namespace OOPGiris
 
         static void Main(string[] args)
         {
-           Insan i= new Insan("buse","koc",65);
+            Insan i = new Insan("buse", "koc", 65);
 
-           Insan i2= new Insan("fatma","türkmen",23);
+            Insan i2 = new Insan("fatma", "türkmen", 23);
 
-           Insan i3= new Insan("mehmet","canlı",21);
+            Insan i3 = new Insan("mehmet", "canlı", 21);
 
+            DortIslem dortIslem = new DortIslem(i, 54);
 
-            DortIslem dortIslem = new DortIslem(i,54);
+            DortIslem dortIslem2 = new DortIslem(i2, 78);
 
-
-            Console.WriteLine(dortIslem.insan.ad);
-
-
-            dortIslem = new DortIslem(i2, 3);
-
-            dortIslem.insan.ad = "kemal";
-            Console.WriteLine(dortIslem.insan.ad);
-            i2.ad = "can";
-            Console.WriteLine(i2.ad);
-            dortIslem.toplama();
-
-            yassDegistir(i2);
-
+            dortIslem.insan = dortIslem2.insan;
 
             Console.WriteLine(dortIslem.insan.ad);
-            Console.WriteLine(dortIslem.insan.yas);
+
+
 
 
         }
 
 
 
-        static void yassDegistir(Insan ınsan)
-        {
-            ınsan.yas = 667;
-        }
 
 
 
