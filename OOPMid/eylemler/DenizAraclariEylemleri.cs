@@ -1,5 +1,4 @@
-﻿
-namespace OOPMid
+﻿namespace OOPMid.eylemler
 {
     internal class DenizAraclariEylemleri
     {

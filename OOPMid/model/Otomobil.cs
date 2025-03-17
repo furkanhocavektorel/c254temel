@@ -1,5 +1,4 @@
-﻿
-namespace OOPMid
+﻿namespace OOPMid.model
 {
     internal class Otomobil : Tasit
     {
@@ -11,8 +10,8 @@ namespace OOPMid
         public string KasaTipi { get; set; }
 
 
-      
-    
+
+
 
 
 

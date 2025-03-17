@@ -1,5 +1,4 @@
-﻿
-namespace OOPMid
+﻿namespace OOPMid.model
 {
     // oop
     /*
@@ -16,7 +15,7 @@ namespace OOPMid
 
         public string GovdeMalzemesi { get; set; }
 
-      
+
 
     }
 }

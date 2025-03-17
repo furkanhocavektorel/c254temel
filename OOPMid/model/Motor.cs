@@ -1,5 +1,6 @@
-﻿
-namespace OOPMid
+﻿using OOPMid.model.enums;
+
+namespace OOPMid.model
 {
     internal class Motor
     {
