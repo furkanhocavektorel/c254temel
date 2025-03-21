@@ -4,28 +4,23 @@ namespace OOPMid.eylemler
 {
     internal class OtomobilEylemleri
     {
-        Otomobil otomobil;
-
-        public OtomobilEylemleri(Otomobil otomobil)
+     
+        public void otomobilOlustur(string marka,string model,List<Motor> motorlar)
         {
-            this.otomobil = otomobil;
+            Otomobil otomobil = new Otomobil();
+            otomobil.Marka = marka;
+            otomobil.Model = model;
+            otomobil.Motor = motorlar;
+
+            Listeler.OtomobilList.Add(otomobil);
         }
 
-        public void hareketEt()
+        public Otomobil otomobilGetir(int index)
         {
-            Console.WriteLine(otomobil.Marka + " araba baya hızlı gidiyor...");
+           
+            return Listeler.OtomobilList[index];
         }
-
-        public void durdur()
-        {
-
-        }
-
-
-        public void motoruCalistir()
-        {
-
-        }
+      
 
     }
 }

@@ -10,5 +10,16 @@ namespace OOPMid.model
         public YakıtTürü Yakıt { get; set; }
 
         public string Uretici { get; set; }
+
+
+
+        public override string? ToString()
+        {
+            string bilgi = "beygir: " + Beygir + ", motor hacmi: " + MotorHacmi + ", yakit: " + Yakıt + ", üretici:" + Uretici;
+            return bilgi;
+        
+        }
+
+
     }
 }

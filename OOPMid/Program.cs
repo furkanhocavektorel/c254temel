@@ -1,27 +1,22 @@
-﻿using OOPMid.eylemler;
+﻿using OOPMid.controller;
+using OOPMid.eylemler;
 using OOPMid.model;
 using OOPMid.model.enums;
 
 namespace OOPMid
 {
+    // FRONT-END SIM
     internal class Program
     {
         static void Main(string[] args)
         {
-            MotorEylemleri motorEylemleri = new MotorEylemleri();
-
-            motorEylemleri.motorOlustur(23, 23, YakıtTürü.DIZEL, "asd");
-            motorEylemleri.motorOlustur(33,655, YakıtTürü.DIZEL, "xxxasd");
-
-            motorEylemleri.ekranaBas();
-          
-
-
+            MotorController motorController = new MotorController();
+            motorController.motorOlustur(564, 2300, YakıtTürü.Benzin, "ferrari");
+           
+        
 
         }
 
-
-       
 
 
     }

@@ -38,7 +38,11 @@ namespace OOPMid.eylemler
 
         }
 
-
+        public Motor motorGetir(int index)
+        {
+            Motor m = Listeler.motorList[index];
+            return m;
+        }
 
 
     }

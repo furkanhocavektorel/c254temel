@@ -11,8 +11,16 @@
 
 
 
+        public override string? ToString()
+        {
+            string bilgi = "marka: " + Marka + ", model: " + Model + ", renk: " + Renk + ", teker sayisi: " + TekerSayisi + ", otomatik mi? " + OtomatikMi + ", kasa tipi: " + KasaTipi + ", motor bilgileri -> " ;
+            for (int i = 0; i<Motor.Count;i++ )
+            {
+                bilgi += Motor[i].ToString();
+            }
 
-
+            return bilgi;
+        }
 
 
 

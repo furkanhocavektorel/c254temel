@@ -7,7 +7,8 @@
 
         public string Renk { get; set; }
 
-        public Motor Motor { get; set; }
+        public List<Motor> Motor { get; set; }
+
 
 
     }
