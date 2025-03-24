@@ -55,7 +55,7 @@ namespace ikinciproje
                         string alinanAday = Console.ReadLine().ToLower();
                         if (liste2.Contains(alinanAday))
                         {
-                            // TODO BURADAN DEVAM
+                            
                             Console.WriteLine(girisYapan + " ve " + alinanAday + " eşleşti.");
                             listedenCikarma(liste1, girisYapan);
                             listedenCikarma(liste2, alinanAday);

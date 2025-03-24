@@ -7,37 +7,22 @@ namespace OOPMid.eylemler
     internal class MotorEylemleri
     {
        
-        public Motor motorOlustur(int beygir,int motorHacmi,YakıtTürü yakit,string üretici)
+        public Motor motorOlustur(int id,int beygir,int motorHacmi,YakıtTürü yakit,string üretici)
         {
             Motor motor = new Motor();
             motor.Beygir = beygir;
             motor.Uretici = üretici;
             motor.Yakıt=yakit;
             motor.MotorHacmi = motorHacmi;
-
+            motor.Id = id;
             Listeler.motorList.Add(motor);
 
 
             return motor;
         }
 
-
-        public void ekranaBas()
-        {
-            for (int i = 0; i < Listeler.motorList.Count; i++)
-            {
-
-                Console.WriteLine(Listeler.motorList[i].Uretici);
-                Console.WriteLine(Listeler.motorList[i].MotorHacmi);
-                Console.WriteLine(Listeler.motorList[i].Beygir);
-                Console.WriteLine(Listeler.motorList[i].Yakıt);
-                Console.WriteLine("**********");
-
-            }
-
-
-        }
-
+        // TODO Index'e göre arama yapılamaz
+        // ID ye göre arama yapılmalı.
         public Motor motorGetir(int index)
         {
             Motor m = Listeler.motorList[index];

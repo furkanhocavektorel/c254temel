@@ -9,6 +9,7 @@
     internal class DenizAraclari : Tasit
     {
 
+
         public int Boy { get; set; }
 
         public int En { get; set; }

@@ -5,21 +5,17 @@ namespace OOPMid.eylemler
     internal class OtomobilEylemleri
     {
      
-        public void otomobilOlustur(string marka,string model,List<Motor> motorlar)
+        public void otomobilOlustur(int id,string marka,string model,List<Motor> motorlar)
         {
             Otomobil otomobil = new Otomobil();
             otomobil.Marka = marka;
             otomobil.Model = model;
             otomobil.Motor = motorlar;
-
+            // TODO listeye eleman ekleme işi repo da yapılacak.
             Listeler.OtomobilList.Add(otomobil);
         }
 
-        public Otomobil otomobilGetir(int index)
-        {
-           
-            return Listeler.OtomobilList[index];
-        }
+   
       
 
     }

@@ -9,10 +9,10 @@ namespace OOPMid.controller
     {
 
 
-        public void motorOlustur(int beygir,int hacmi,YakıtTürü yakit,string üretici)
+        public void motorOlustur(int id, int beygir,int hacmi,YakıtTürü yakit,string üretici)
         {
             MotorEylemleri motorEylemleri = new MotorEylemleri();
-            motorEylemleri.motorOlustur(beygir, hacmi, yakit, üretici);
+            motorEylemleri.motorOlustur(id,beygir, hacmi, yakit, üretici);
 
         }
 
