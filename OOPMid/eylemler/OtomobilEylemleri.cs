@@ -11,8 +11,9 @@ namespace OOPMid.eylemler
             otomobil.Marka = marka;
             otomobil.Model = model;
             otomobil.Motor = motorlar;
-            // TODO listeye eleman ekleme işi repo da yapılacak.
-            Listeler.OtomobilList.Add(otomobil);
+           
+            // TODO OTOMOBİL EKLENECEK.
+
         }
 
    
