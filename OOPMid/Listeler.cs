@@ -2,7 +2,7 @@
 
 namespace OOPMid
 {
-    // DB SIM
+    
     internal class Listeler
     {
         private static List<Motor> motorList = new List<Motor>();

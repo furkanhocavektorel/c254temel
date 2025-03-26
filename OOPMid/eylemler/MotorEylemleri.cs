@@ -1,22 +1,58 @@
 ﻿
 using OOPMid.model;
 using OOPMid.model.enums;
+using OOPMid.util;
 
 namespace OOPMid.eylemler
 {
-    internal class MotorEylemleri
+    internal class MotorEylemleri : ITasitEylemleri
     {
 
-        Listeler listeler = new Listeler();
+        Listeler listeler;
 
-        public Motor motorOlustur(int id,int beygir,int motorHacmi,YakıtTürü yakit,string üretici)
+        GenerateId generateId;
+
+        // OVERLOAD
+        public MotorEylemleri(Listeler listeler,GenerateId generateId) {
+
+            this.listeler = listeler;
+
+            this.generateId = generateId;
+
+        }
+
+        public MotorEylemleri(Listeler listeler)
+        {
+            this.listeler = listeler;
+        }
+
+
+
+
+
+        public Motor motorOlustur(int beygir,int motorHacmi,YakıtTürü yakit,string üretici)
         {
             Motor motor = new Motor();
             motor.Beygir = beygir;
             motor.Uretici = üretici;
             motor.Yakıt=yakit;
             motor.MotorHacmi = motorHacmi;
-            motor.Id = id;
+
+            List<Motor> motorList = listeler.motorListesiGetir();
+
+            for(int i = 0; i < motorList.Count; i++)
+            {
+                if (motor.Beygir == motorList[i].Beygir 
+                    && motor.MotorHacmi == motorList[i].MotorHacmi
+                    && motor.Yakıt.Equals(motorList[i].Yakıt)
+                    && motor.Uretici.Equals(motorList[i].Uretici))
+                {
+                    motor.Id = null;
+                    return motor;
+                }
+
+            }
+            motor.Id = generateId.generateMotorId();
 
             listeler.motorEkle(motor);
 
@@ -58,12 +94,9 @@ namespace OOPMid.eylemler
 
         }
 
-
-
-
-
-
-
+        public void kaydet(string marka, string model)
+        {
+        }
 
 
 

@@ -1,12 +1,14 @@
 ﻿namespace OOPMid.eylemler
 {
-    internal class DenizAraclariEylemleri
+    internal class DenizAraclariEylemleri: ITasitEylemleri
     {
-        public void hareketEt()
-        {
-            Console.WriteLine("denizde sallanıyor");
+
+
+        public void kaydet(string marka, string model) { 
+
 
         }
+
 
     }
 }

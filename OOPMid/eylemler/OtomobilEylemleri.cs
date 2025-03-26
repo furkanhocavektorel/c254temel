@@ -2,22 +2,17 @@
 
 namespace OOPMid.eylemler
 {
-    internal class OtomobilEylemleri
+    internal class OtomobilEylemleri : ITasitEylemleri
     {
-     
-        public void otomobilOlustur(int id,string marka,string model,List<Motor> motorlar)
+        // override 
+        public void kaydet(string marka, string model)
         {
-            Otomobil otomobil = new Otomobil();
-            otomobil.Marka = marka;
-            otomobil.Model = model;
-            otomobil.Motor = motorlar;
-           
-            // TODO OTOMOBİL EKLENECEK.
-
+            Console.WriteLine("otomobil kayit edildi.");
+            
         }
 
-   
-      
+
+
 
     }
 }

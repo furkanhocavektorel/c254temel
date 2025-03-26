@@ -3,17 +3,38 @@
 using OOPMid.eylemler;
 using OOPMid.model;
 using OOPMid.model.enums;
+using OOPMid.util;
 
 namespace OOPMid.controller
 {
     internal class MotorController
     {
-        MotorEylemleri motorEylemleri = new MotorEylemleri();
+        ITasitEylemleri tasitEylemleri;
 
-
-        public void motorOlustur(int id, int beygir,int hacmi,YakıtTürü yakit,string üretici)
+        public MotorController()
         {
-            motorEylemleri.motorOlustur(id,beygir, hacmi, yakit, üretici);
+
+            // interfaceler new lenemez
+            tasitEylemleri =new OtomobilEylemleri();
+                
+
+        }
+
+
+        public Motor olustur(int beygir,int hacmi,YakıtTürü yakit,string model)
+        {
+            tasitEylemleri.kaydet("vw", model);
+
+
+
+
+
+
+
+
+
+
+            return motorEylemleri.motorOlustur(beygir, hacmi, yakit, üretici);
 
         }
 

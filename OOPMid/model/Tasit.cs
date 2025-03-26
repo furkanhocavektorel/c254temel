@@ -12,6 +12,11 @@
         public List<Motor> Motor { get; set; }
 
 
+        public virtual void test()
+        {
+            Console.WriteLine("test metodu calisti");
+        }
+
 
     }
 }

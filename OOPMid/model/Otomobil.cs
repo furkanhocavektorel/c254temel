@@ -24,5 +24,11 @@
 
 
 
+        public override void test()
+        {
+            Console.WriteLine("otomobil classında ki test metodu calisti");
+        }
+
+
     }
 }

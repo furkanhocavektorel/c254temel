@@ -16,6 +16,10 @@
 
         public string GovdeMalzemesi { get; set; }
 
+        public override void test()
+        {
+            Console.WriteLine("deniz araclarinda ki test metodu calisti");
+        }
 
 
     }
