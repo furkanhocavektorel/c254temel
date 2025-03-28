@@ -98,7 +98,9 @@ namespace OOPMid.eylemler
         {
         }
 
-
-
+        public void calistir()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -8,5 +8,7 @@ namespace OOPMid.eylemler
 
         public void kaydet(string marka,string model);
 
+        public void calistir();
+
     }
 }

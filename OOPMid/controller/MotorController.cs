@@ -26,26 +26,21 @@ namespace OOPMid.controller
             tasitEylemleri.kaydet("vw", model);
 
 
-
-
-
-
-
-
-
-
-            return motorEylemleri.motorOlustur(beygir, hacmi, yakit, üretici);
+            return null;
+          //  return motorEylemleri.motorOlustur(beygir, hacmi, yakit, üretici);
 
         }
 
         public Motor motorGetirIdyeGore(int id)
         {
-            return motorEylemleri.motorGetir(id);
+            return null;
+            //return motorEylemleri.motorGetir(id);
         }
 
-        public List<Motor> motorGetirUreticiyeGore(string ureticiAdi) { 
-        
-            return motorEylemleri.motorGetirUreticiyeGore(ureticiAdi);
+        public List<Motor> motorGetirUreticiyeGore(string ureticiAdi) {
+
+            return null;
+            //return motorEylemleri.motorGetirUreticiyeGore(ureticiAdi);
         
         }
 

@@ -1,17 +1,23 @@
-﻿using OOPMid.model;
-
+﻿
 namespace OOPMid.eylemler
 {
-    internal class OtomobilEylemleri : ITasitEylemleri
+    public class OtomobilEylemleri : ITekeriOlanTasitlarEylemi
     {
-        // override 
-        public void kaydet(string marka, string model)
+        public void calistir()
         {
-            Console.WriteLine("otomobil kayit edildi.");
-            
         }
 
+        public void camAc()
+        {
+        }
 
+        public void kaydet(string marka, string model)
+        {
+        }
+
+        public void tekerDegistir()
+        {
+        }
 
 
     }

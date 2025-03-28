@@ -14,7 +14,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ikinciproje", "ikinciproje\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOPGiris", "OOPGiris\OOPGiris.csproj", "{AE044141-35E5-45EB-A046-0CB41B9B7CD3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOPMid", "OOPMid\OOPMid.csproj", "{FBC731EE-4512-465B-8625-1B4E0AE7E2A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOPMid", "OOPMid\OOPMid.csproj", "{FBC731EE-4512-465B-8625-1B4E0AE7E2A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialMedia", "SocialMedia\SocialMedia.csproj", "{C0868420-6A48-4A59-82EE-CB16D114980B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,6 +40,10 @@ Global
 		{FBC731EE-4512-465B-8625-1B4E0AE7E2A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBC731EE-4512-465B-8625-1B4E0AE7E2A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBC731EE-4512-465B-8625-1B4E0AE7E2A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0868420-6A48-4A59-82EE-CB16D114980B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0868420-6A48-4A59-82EE-CB16D114980B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0868420-6A48-4A59-82EE-CB16D114980B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0868420-6A48-4A59-82EE-CB16D114980B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
