@@ -1,6 +1,6 @@
-﻿
+﻿using SocialMedia.entity;
 
-namespace SocialMedia.business
+namespace SocialMedia.business.@abstract
 {
     internal interface AdminService
     {

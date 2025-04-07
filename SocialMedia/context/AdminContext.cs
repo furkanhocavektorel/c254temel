@@ -11,8 +11,15 @@ namespace SocialMedia.context
             admins.Add(admin);
         }
 
+        // bütün adminleri listeleyen metot
 
+        public Admin getAdmin(string username) {
+            return admins.FirstOrDefault(x => x.Username.Equals(username));
+        }
 
-
+        public List<Admin> getList()
+        {
+            return admins;
+        }
     }
 }

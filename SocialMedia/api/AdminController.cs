@@ -1,5 +1,6 @@
 ﻿
-using SocialMedia.business;
+using SocialMedia.business.@abstract;
+using SocialMedia.business.concrete;
 using SocialMedia.context;
 
 namespace SocialMedia.api
