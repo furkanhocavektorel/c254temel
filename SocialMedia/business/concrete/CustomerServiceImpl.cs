@@ -1,4 +1,5 @@
-﻿using SocialMedia.business.@abstract;
+﻿using OOPMid.util;
+using SocialMedia.business.@abstract;
 using SocialMedia.context;
 using SocialMedia.entity;
 
@@ -12,6 +13,11 @@ namespace SocialMedia.business.concrete
             _customerContext = customerContext;
         }
 
+        public Customer? GetCustomerById(long id)
+        {
+            return _customerContext.getCustomerById(id);
+        }
+
 
 
         // TODO - EMAIL/USERNAME kontrolleri
@@ -21,6 +27,7 @@ namespace SocialMedia.business.concrete
             customer.Email = email;
             customer.Username = username;
             customer.Password = password;
+            customer.Id=GenerateId.generateCustomerId();
 
             _customerContext.save(customer);
 

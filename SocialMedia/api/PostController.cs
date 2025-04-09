@@ -1,5 +1,6 @@
 ﻿using SocialMedia.business.@abstract;
 using SocialMedia.business.concrete;
+using SocialMedia.context;
 using SocialMedia.entity;
 using System;
 using System.Collections.Generic;
@@ -12,15 +13,18 @@ namespace SocialMedia.api
     internal class PostController
     {
 
-        public void save(int customerId)
+        PostService _postService;
+
+        public PostController()
         {
-            // TODO post bilgileri alınacak post kayıt edilecek.
+            _postService = new PostServiceImpl(
+                new PostContext(),
+                new CustomerServiceImpl(new CustomerContext()));
+        }
 
-            PostService postService = new PostServiceImpl();
-
-
-            postService.save()
-
+        public void save(string title,string desc,long customerId)
+        {
+            _postService.save(title, desc, customerId);
 
         }
     }

@@ -12,6 +12,13 @@ namespace SocialMedia.context
             customers.Add(customer);
         }
 
+        public Customer? getCustomerById(long id)
+        {
+           
+            return customers.FirstOrDefault(c => c.Id==id);
+
+        }
+
 
 
     }
