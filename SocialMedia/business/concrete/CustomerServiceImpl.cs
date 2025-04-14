@@ -19,7 +19,6 @@ namespace SocialMedia.business.concrete
         }
 
 
-
         // TODO - EMAIL/USERNAME kontrolleri
         public void save(string email, string username, string password)
         {

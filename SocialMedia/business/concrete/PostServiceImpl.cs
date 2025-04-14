@@ -2,7 +2,6 @@
 using SocialMedia.context;
 using SocialMedia.entity;
 
-
 namespace SocialMedia.business.concrete
 {
     internal class PostServiceImpl : PostService
@@ -19,13 +18,24 @@ namespace SocialMedia.business.concrete
             _customerService = customerService;
         }
 
+        // bu müsteri id'sine kayıtlı biri var mı?
+        public List<Post> getPostByCustomerId(long customerId)
+        {
+            return _postContext.getPostByCustomerId(customerId);
+           
+        }
+
+        public List<Post> getPostList()
+        {
+           return _postContext.GetPosts();
+        }
+
         public void save(string title, string desc, long customerId)
         {
 
-
             Customer c =_customerService.GetCustomerById(customerId);
             if (c == null) {
-                Console.WriteLine("hata customer null post atilamadi !!!");
+                Console.WriteLine("kullanici bulunamadi !!!");
                 return;
             }
 

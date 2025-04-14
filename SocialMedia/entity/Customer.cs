@@ -11,7 +11,7 @@ namespace SocialMedia.entity
         public override string ToString()
         {
             // Calling base class ToString for common properties
-            return base.ToString() + $", Email: {Email}, Phone: {Phone}, Age: {Age}";
+            return base.ToString() + $", Email: {Email}, Phone: {Phone}, Age: {Age} , id: {Id}";
         }
     }
 }

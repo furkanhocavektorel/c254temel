@@ -13,28 +13,59 @@ namespace SocialMedia
         // FE - FRONT-END SIM
         static void Main(string[] args)
         {
-
-
             CustomerController customerController = new CustomerController();
 
             customerController.save("frkn", "asd", "frkn@gmail.com");
             customerController.save("ali", "xaxa", "alikoc@gmail.com");
+            customerController.save("buse", "asd", "buse@gmail.com");
+            customerController.save("fatma", "aaaaa", "fatma@gmail.com");
 
+            postKaydet();
 
             PostController postController = new PostController();
 
-            postController.save("Hava Bugün çok güzel", "bugün yürüyüş için harika bir gün. sizde koşuya çıkın.", 2);
+            for (int i = 0; i < postController.getPosts().Count; i++) {
 
-            for (int i = 0; i < List.posts.Count; i++) {
-
-                Post po=List.posts[i];
+                Post po= postController.getPosts()[i];
 
                 Console.WriteLine(po.ToString());
 
-            
+                Console.WriteLine("*************\n");            
+            }
+
+
+            Console.WriteLine("\n \n----- kullanici postları ----- ");
+
+
+            for (int i = 0; i < postController.getPostByCustomerId(4).Count; i++)
+            {
+
+                Post po = postController.getPostByCustomerId(4)[i];
+
+                Console.WriteLine(po.ToString());
+
+                Console.WriteLine("*************\n");
             }
 
 
         }
+
+        public static void postKaydet()
+        {
+            PostController postController = new PostController();
+
+            postController.save("Bugün hava çok güzel", "Yürüyüş yapmak için harika bir gün! Koşuya çıkmayı düşünenler için de ideal.", 2);
+            postController.save("Bugün güneşli bir gün", "Bugün dışarıda vakit geçirmek için harika bir gün. Koşu yapmak isteyenlere önerimdir.", 1);
+            postController.save("Güzel bir bahar günü", "Hava çok güzel, yürüyüş yapmak için mükemmel bir fırsat. Koşuya çıkmaya ne dersiniz?", 1);
+            postController.save("Hava harika", "Bugün yürüyüş ve koşu için en iyi zamanlardan biri. Kendinizi dışarıda hissedin.", 2);
+            postController.save("Yeni bir gün başlıyor", "Dışarıda harika bir hava var. Yürüyüş yaparak güne başlayabilirsiniz.", 3);
+            postController.save("Havanın tadını çıkar", "Bugün yürüyüş yapmak için mükemmel bir gün. Koşuya çıkmayı da unutmayın.", 4);
+            postController.save("Sıcak bir yaz günü", "Bugün sıcak bir gün. Dışarıda spor yapmak isteyenlere tavsiyem, sabah erken saatlerde çıkmaları.", 3);
+            postController.save("Soğuk ama güzel bir sabah", "Bugün soğuk ama güzel bir hava var. Koşuya çıkmak isteyenlere önerim sabah saatleri.", 4);
+            postController.save("Gün batımında koşu", "Bugün gün batımında koşmak için ideal bir hava var. Denemelisiniz.", 3);
+            postController.save("Rüzgarlı ama keyifli", "Bugün biraz rüzgarlı ama dışarıda vakit geçirmek için harika bir gün. Koşuya çıkmayı unutmayın.", 4);
+        }
+
+
     }
 }

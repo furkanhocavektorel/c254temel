@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace SocialMedia.api
 {
-    internal class PostController
+    internal class PostController 
     {
 
         PostService _postService;
@@ -27,5 +27,16 @@ namespace SocialMedia.api
             _postService.save(title, desc, customerId);
 
         }
+
+        public List<Post> getPosts() { 
+            return _postService.getPostList();
+        }
+
+        public List<Post> getPostByCustomerId(long customerId) { 
+        
+            return _postService.getPostByCustomerId(customerId);
+        }
+
+
     }
 }
