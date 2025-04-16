@@ -6,6 +6,7 @@ namespace OOPMid.util
     {
         private static int adminId = 0;
         private static int customerId = 0;
+        private static int postId = 0;
 
         public static int generateAdminId() {
 
@@ -21,7 +22,13 @@ namespace OOPMid.util
             return customerId;
 
         }
+        public static int generatePostId()
+        {
 
+            postId = postId + 1;
+            return postId;
+
+        }
 
     }
 }

@@ -11,5 +11,8 @@ namespace SocialMedia.business.@abstract
         public List<Post> getPostList();
 
         public List<Post> getPostByCustomerId(long customerId);
+
+        public Post getById(long id);
+
     }
 }

@@ -10,7 +10,18 @@ namespace SocialMedia.entity
 
         public Customer Customer { get; set; }
 
-        public Post PostId { get; set; }
+        public Post Post { get; set; }
+
+        public Comment()
+        {
+            CreateAt = DateTime.Now;
+        }
+
+        public override string ToString()
+        {
+            return "post Id: "+Post.Id+", yorum:"+Content;
+        }
+
 
     }
 }

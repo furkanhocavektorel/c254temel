@@ -22,6 +22,11 @@ namespace SocialMedia.context
 
         }
 
+        internal Post getPostById(long id)
+        {
+            return posts.FirstOrDefault(post => post.Id == id);
+        }
+
 
 
     }

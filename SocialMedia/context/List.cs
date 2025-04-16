@@ -10,6 +10,7 @@ namespace SocialMedia.context
         public static List<Customer> customers = new List<Customer>();
         public static List<Admin> admins = new List<Admin>();
         public static List<Post> posts = new List<Post>();
+        protected static List<Comment> comments = new List<Comment>();
 
       
     }

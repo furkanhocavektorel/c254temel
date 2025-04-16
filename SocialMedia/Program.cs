@@ -13,34 +13,15 @@ namespace SocialMedia
         // FE - FRONT-END SIM
         static void Main(string[] args)
         {
-            CustomerController customerController = new CustomerController();
-
-            customerController.save("frkn", "asd", "frkn@gmail.com");
-            customerController.save("ali", "xaxa", "alikoc@gmail.com");
-            customerController.save("buse", "asd", "buse@gmail.com");
-            customerController.save("fatma", "aaaaa", "fatma@gmail.com");
-
+            customerKaydet();
             postKaydet();
 
             PostController postController = new PostController();
 
-            for (int i = 0; i < postController.getPosts().Count; i++) {
-
-                Post po= postController.getPosts()[i];
-
-                Console.WriteLine(po.ToString());
-
-                Console.WriteLine("*************\n");            
-            }
-
-
-            Console.WriteLine("\n \n----- kullanici postları ----- ");
-
-
-            for (int i = 0; i < postController.getPostByCustomerId(4).Count; i++)
+            for (int i = 0; i < postController.getPosts().Count; i++)
             {
 
-                Post po = postController.getPostByCustomerId(4)[i];
+                Post po = postController.getPosts()[i];
 
                 Console.WriteLine(po.ToString());
 
@@ -48,8 +29,37 @@ namespace SocialMedia
             }
 
 
+            CommentController commentController = new CommentController();
+
+            commentController.save("evet bencede süper abi", 3, 1);
+
+            commentController.save("ben katılmıyorum. bence kötü.", 3, 3);
+
+            List<Comment> comments=commentController.findByPostId(3);
+
+            for (int i = 0; i < comments.Count; i++)
+            {
+
+                Console.WriteLine(comments[i]);
+
+            }
+
+
+            commentController.save(null, 3, 2);
+
+
         }
 
+        public static void customerKaydet()
+        {
+            CustomerController customerController = new CustomerController();
+
+            customerController.save("frkn", "asd", "frkn@gmail.com");
+            customerController.save("ali", "xaxa", "alikoc@gmail.com");
+            customerController.save("buse", "asd", "buse@gmail.com");
+            customerController.save("fatma", "aaaaa", "fatma@gmail.com");
+
+        }
         public static void postKaydet()
         {
             PostController postController = new PostController();

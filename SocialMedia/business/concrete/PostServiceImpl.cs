@@ -1,4 +1,5 @@
-﻿using SocialMedia.business.@abstract;
+﻿using OOPMid.util;
+using SocialMedia.business.@abstract;
 using SocialMedia.context;
 using SocialMedia.entity;
 
@@ -25,6 +26,7 @@ namespace SocialMedia.business.concrete
            
         }
 
+
         public List<Post> getPostList()
         {
            return _postContext.GetPosts();
@@ -43,15 +45,20 @@ namespace SocialMedia.business.concrete
             post.Title = title;
             post.Description = desc;
             post.customer = c;
+            post.Id=GenerateId.generatePostId();
 
             _postContext.save(post);
         }
 
-     
 
-
-
-
-
+        public Post getById(long id)
+        {
+            Post post = _postContext.getPostById(id);
+            if (post==null)
+            {
+                throw new Exception(id+"ye sahip post bulunamadi...");
+            }
+            return post;
+        }
     }
 }
